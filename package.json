@@ -1,0 +1,31 @@
+{
+  "name": "pinky",
+  "version": "1.0.0",
+  "description": "PINKY Is Not Kissing You! A modern Launcher for modded classic Doom.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lycanite/PINKY.git"
+  },
+  "keywords": [
+    "Electron",
+    "Doom",
+    "Launcher",
+    "PINKY",
+    "ZDoom",
+    "GZDoom",
+    "Multiplayer"
+  ],
+  "author": "Lycanite",
+  "license": "CC0-1.0",
+  "bugs": {
+    "url": "https://github.com/Lycanite/PINKY/issues"
+  },
+  "homepage": "https://github.com/Lycanite/PINKY#readme",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0"
+  }
+}

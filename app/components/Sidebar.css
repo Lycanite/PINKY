@@ -1,14 +1,59 @@
-.container {
-  position: absolute;
-  top: 30%;
-  left: 10px;
+.sidebar {
+  width: 20vw;
+  height: 100vh;
+  color: #DDD;
+  background-color: #222;
+  background-image: url(../img/menu.png);
+  overflow: hidden;
+  box-shadow: 2px 0px 5px 0px rgba(0,0,0,0.75);
   text-align: center;
 }
 
-.container h2 {
-  font-size: 5rem;
+.sidebarContent {
+  padding: 2rem;
+  padding-bottom: 0;
 }
 
-.container a {
-  font-size: 1.4rem;
+.sidebar header h1 {
+  font-size: 8rem;
+  font-family: AmazDoom, Arial, Helvetica, Helvetica Neue;
+  margin-bottom: -2.75rem;
+}
+
+.sidebar header h1 span {
+  font-family: AmazDoomRight, Arial, Helvetica, Helvetica Neue;
+}
+
+.sidebar header h2 {
+  font-size: 1rem;
+  font-family: Doom, Arial, Helvetica, Helvetica Neue;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  height: 4rem;
+  margin: 1rem 0;
+  font-family: Doom, Arial, Helvetica, Helvetica Neue;
+  font-size: 1.5rem;
+  font-weight: normal;
+  color: #DDD;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.3);
+  background-image: url(../img/button.png);
+  border: none;
+  box-shadow: 2px 2px 5px 0px rgba(0,0,0,0.75);
+}
+
+.sidebar button:hover {
+  color: #222;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-position: 0px -256px;
+  border: none;
+}
+
+.sidebar img {
+  width: 80%;
+  height: auto;
 }

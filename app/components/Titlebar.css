@@ -1,0 +1,8 @@
+.titleBar {
+  position: absolute;
+  display: block;
+  height: 2rem;
+  margin: 0.5rem;
+  top: 0;
+  -webkit-app-region: drag;
+}

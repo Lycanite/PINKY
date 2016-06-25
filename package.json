@@ -8,7 +8,7 @@
     "url": "git+https://github.com/Lycanite/PINKY.git"
   },
   "author": "Lycanite (Richard Nicholson)",
-  "license": "CC0-1.0",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Lycanite/PINKY/issues"
   },
@@ -42,7 +42,6 @@
   "bin": {
     "electron": "./node_modules/.bin/electron"
   },
-  "license": "MIT",
   "devDependencies": {
     "asar": "^0.11.0",
     "babel-core": "^6.9.0",
@@ -81,12 +80,14 @@
     "express": "^4.13.4",
     "extract-text-webpack-plugin": "^1.0.1",
     "fbjs-scripts": "^0.7.1",
+    "file-loader": "^0.9.0",
     "jsdom": "^9.2.0",
     "json-loader": "^0.5.4",
     "minimist": "^1.2.0",
     "mocha": "^2.5.3",
     "node-libs-browser": "^1.0.0",
     "react-addons-test-utils": "^15.1.0",
+    "react-layout-pane": "^0.1.16",
     "redux-devtools": "^3.3.1",
     "redux-devtools-dock-monitor": "^1.1.1",
     "redux-devtools-log-monitor": "^1.0.11",
@@ -94,6 +95,7 @@
     "selenium-webdriver": "^2.53.2",
     "sinon": "^1.17.4",
     "style-loader": "^0.13.1",
+    "url-loader": "^0.5.7",
     "webpack": "^1.13.1",
     "webpack-dev-middleware": "^1.6.1",
     "webpack-hot-middleware": "^2.10.0"

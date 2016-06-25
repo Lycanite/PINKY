@@ -1,23 +1,49 @@
+@font-face {
+    font-family: AmazDoom;
+    src: url(./fonts/AmazDooMLeft.ttf);
+}
+@font-face {
+    font-family: AmazDoomRight;
+    src: url(./fonts/AmazDooMRight.ttf);
+}
+@font-face {
+    font-family: Doom;
+    src: url(./fonts/DooM.ttf);
+}
+
 body {
   position: relative;
-  color: white;
   height: 100vh;
-  background-color: #232C39;
-  background-image: linear-gradient(45deg, rgba(0, 216, 255, .5) 10%, rgba(0, 1, 127, .7));
-  font-family: Arial, Helvetica, Helvetica Neue;
-  overflow-y: hidden;
+  margin: 0;
+  color: #DDD;
+  background-color: #222;
+  background-image: url(./img/bg.png);
+  font-family: Doom, Arial, Helvetica, Helvetica Neue;
+  overflow: hidden;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0;
+  font-weight: normal;
+  color: #fff;
+  text-shadow: 2px 2px rgba(0,0,0,0.75);
+}
+
+h1 {
+  font-size: 4rem;
 }
 
 h2 {
-  margin: 0;
-  font-size: 2.25rem;
-  font-weight: bold;
-  letter-spacing: -.025em;
-  color: #fff;
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 2rem;
 }
 
 p {
-  font-size: 24px;
+  font-size: 1rem;
+  text-shadow: 2px 2px rgba(0,0,0,0.75);
 }
 
 li {

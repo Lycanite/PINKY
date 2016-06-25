@@ -10,7 +10,7 @@ export default class Sidebar extends Component {
         <Layout type="column">
           <Flex className={styles.sidebarContent}>
             <header>
-              <h1>Pin<span>KY</span></h1>
+              <h1>Pink<span>Y</span></h1>
               <h2>PINKY Is Not Kissing You!</h2>
             </header>
             <nav>

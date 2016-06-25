@@ -3,6 +3,16 @@
   display: block;
   height: 2rem;
   margin: 0.5rem;
+  padding: 0 0.25rem;
   top: 0;
   -webkit-app-region: drag;
+}
+
+.windowControls {
+  -webkit-app-region: no-drag;
+  opacity: 0.75;
+}
+
+.windowControls i {
+  margin-left: 1rem;
 }

@@ -67,3 +67,11 @@ a:hover {
   text-decoration: none;
   cursor: pointer;
 }
+
+textarea, input, button:focus {
+  outline: none;
+}
+
+button, img {
+  -webkit-user-select: none;
+}

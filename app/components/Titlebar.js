@@ -1,33 +1,39 @@
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 import { Layout, Fixed, Flex } from 'react-layout-pane';
+import ClassNames from 'classnames';
 import styles from './Titlebar.css';
 
 const electron = require('electron');
-const BrowserWindow = electron.BrowserWindow;
+//const browserWindow = electron.getCurrentWindow();
 
 export default class Titlebar extends Component {
-  minimize() {
-    alert("Minimize!");
+  _windowMinimize() {
+    console.log("Minimize!");
   }
 
-  maximize(e) {
+  _windowMaximize() {
     alert("Maximize!");
   }
 
-  close(e) {
+  _windowClose() {
     alert("Close!");
   }
 
   render() {
+    const windowMaximizeButton = ClassNames({
+      'fa fa-plus-square': true,//!electron.getCurrentWindow(),
+      'fa fa-minus-square': false//electron.getCurrentWindow()
+    });
+
     return (
       <div>
       <span onClick={function() {alert("left")}}>_ </span>
       <Layout type="row" className={styles.titleBar}>
         <Flex></Flex>
         <Fixed className={styles.windowControls}>
-          <i className="fa fa-chevron-down" onClick={() => this.minimize}></i>
-          <i className="fa fa-plus-square" onClick={this.maximize}></i>
-          <i className="fa fa-close" onClick={this.close}></i>
+          <button onClick={this._windowMinimize.bind(this)}><i className="fa fa-chevron-down"></i></button>
+          <i className={windowMaximizeButton} onClick={this._windowMaximize.bind(this)}></i>
+          <i className="fa fa-close" onClick={this._windowClose.bind(this)}></i>
         </Fixed>
       </Layout>
       </div>
